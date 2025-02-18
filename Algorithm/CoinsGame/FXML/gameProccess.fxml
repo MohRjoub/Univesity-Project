@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="661.0" prefWidth="923.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gameProccessController">
+	<children>
+      <ScrollPane fx:id="coinsScrollPane" layoutX="119.0" layoutY="151.0" prefHeight="154.0" prefWidth="685.0" />
+      <HBox layoutX="8.0" layoutY="10.0" prefHeight="154.0" prefWidth="915.0">
+         <children>
+            <Label prefHeight="141.0" prefWidth="497.0" text="        Happy" textFill="#6b6f7e">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Label prefHeight="141.0" prefWidth="317.0" text="Coins" textFill="#efaf23">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextField fx:id="expectedValueTF" layoutX="397.0" layoutY="340.0" prefHeight="18.0" prefWidth="129.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #CCCCCC; -fx-border-width: 1; -fx-padding: 5;" />
+      <Label layoutX="370.0" layoutY="288.0" prefHeight="75.0" prefWidth="211.0" text="Expected Value" textFill="#efaf23">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="97.0" layoutY="401.0" prefHeight="274.0" prefWidth="674.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="startButton" prefHeight="86.0" prefWidth="241.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);" text="Start" textFill="#efaf23">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resetButton" prefHeight="137.0" prefWidth="241.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);" text="Reset" textFill="#efaf23">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="showTabelButton" prefHeight="137.0" prefWidth="478.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);" text="Show DPTabel" textFill="#efaf23">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="showResultButton" prefHeight="137.0" prefWidth="485.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);" text="Show Coins" textFill="#efaf23">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+	</children>
+</AnchorPane>

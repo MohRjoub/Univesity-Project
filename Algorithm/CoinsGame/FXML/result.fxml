@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="661.0" prefWidth="923.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.resultController">
+	<children>
+      <HBox layoutX="8.0" layoutY="10.0" prefHeight="154.0" prefWidth="915.0">
+         <children>
+            <Label prefHeight="141.0" prefWidth="497.0" text="        Happy" textFill="#6b6f7e">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Label prefHeight="141.0" prefWidth="317.0" text="Coins" textFill="#efaf23">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="closeButton" layoutX="345.0" layoutY="554.0" prefHeight="137.0" prefWidth="241.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);" text="Close" textFill="#efaf23">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Button>
+      <Label fx:id="firstPlayerName" layoutX="133.0" layoutY="135.0" prefHeight="75.0" prefWidth="317.0" text="Player1 Score" textFill="#efaf23">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondPlayerName" layoutX="549.0" layoutY="135.0" prefHeight="75.0" prefWidth="373.0" text="Player2 Score" textFill="#efaf23">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstPlayerScoreTF" layoutX="173.0" layoutY="214.0" prefHeight="18.0" prefWidth="129.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #CCCCCC; -fx-border-width: 1; -fx-padding: 5;" />
+      <TextField fx:id="secondPlayerScoreTF" layoutX="574.0" layoutY="214.0" prefHeight="24.0" prefWidth="129.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #CCCCCC; -fx-border-width: 1; -fx-padding: 5;" />
+      <ScrollPane fx:id="firstPlayerCoinsBox" layoutX="191.0" layoutY="308.0" prefHeight="233.0" prefWidth="94.0" />
+      <ScrollPane fx:id="secondPlayerCoinsBox" layoutX="592.0" layoutY="308.0" prefHeight="233.0" prefWidth="94.0" />
+	</children>
+</AnchorPane>

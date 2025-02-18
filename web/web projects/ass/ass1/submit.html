@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Submit Maintenance Request</title>
+    </head>
+    <body>
+        <header>
+            <img src="./logo.png" alt="logo" width="80" height="70">            
+            <h1>Rjoub For Maintenance Services</h1>
+            <nav>
+                <a href="./index.html">Home</a> | 
+                <a href="./submit.html">Submit Request</a> | 
+                <a href="./contact.html">Contact Us</a> |
+                <a href="./admin.html">Administrator</a>
+            </nav>
+        </header>
+        <h2>Submit Maintenance Request</h2>
+        <form method="post" action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php">
+            <fieldset>
+                <legend>Submit Maintenance Request Form</legend>
+                <p>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+                </p>
+                <p>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </p>
+                <p>
+                <label for="sender-location">Location/Room Number</label>
+                <input type="text" id="sender-location" name="sender-location" placeholder="Enter the room or location" required>
+                </p>
+                <p>
+                    <label for="issue-description">Issue Description</label>
+                    <textarea id="issue-description" name="issue-description" rows="4" placeholder="Describe the issue..." required></textarea>
+                </p>
+                <p>
+                <label for="urgency-level">Urgency Level</label>
+                <select id="urgency-level">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+                </p>
+                <p>
+                <label for="upload-photo">Upload a Photo of the Issue (optional)</label>
+                <input type="file" id="upload-photo" name="upload-photo" accept="image/*">    
+                </p>
+                <p>
+                <button type="submit">Submit Request</button>
+                <button>
+                    <a href="./confirm.html">Confirm</a>
+                </button>
+                </p>
+            </fieldset>
+        </form>
+        <footer>
+            <p>&copy; 2024 Rjoub For Maintenance Services - All Rights Reserved</p>
+            <p>
+                Address: Birzeit, Rammalah<br>
+                Phone: +972 59-541-0777<br>
+                Email: <a href="mailto:mohammadrojoob@gmail.com">mohammadrojoob@gmail.com</a><br>
+            </p>
+        </footer>
+    </body>
+</html>

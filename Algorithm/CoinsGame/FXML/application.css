@@ -1,0 +1,24 @@
+.back-button {
+    -fx-background-color: #efaf23;     
+    -fx-text-fill: white;                   
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20;                      
+    -fx-background-radius: 20;              
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2); /* Soft shadow */
+    -fx-cursor: hand;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20;
+}
+
+.back-button:hover {
+    -fx-background-color: #e99d20;          
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 15, 0, 2, 2); /* Stronger shadow */
+}
+
+.back-button:pressed {
+    -fx-background-color: #d48c1e;         
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 15, 0, 1, 1); /* More intense shadow */
+    -fx-translate-y: 1px;                  
+}
