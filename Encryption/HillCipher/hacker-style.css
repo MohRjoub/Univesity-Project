@@ -1,0 +1,25 @@
+.root {
+    -fx-background-color: #21211f;
+}
+
+.label {
+    -fx-text-fill: #00ff00;
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #21211f;
+    -fx-text-fill: #00ff00;
+    -fx-border-color: #00ff00;
+    -fx-border-width: 2px;
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 14px;
+    -fx-padding: 5 10;
+}
+
+.button:hover {
+    -fx-background-color: #161615;
+    -fx-text-fill: #00ff7f;
+    -fx-cursor: hand;
+}
